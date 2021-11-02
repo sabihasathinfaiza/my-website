@@ -1,0 +1,104 @@
+<!Doctype html>
+<head>
+    <title>
+        assignment 5
+    </title>
+
+</head>
+ <?php
+   $result1="";
+   $result2="";
+   $result3="";
+   $result4="";
+   //$result="";
+   if (isset ($_POST['operator'])){
+
+   }
+
+$first_num  = $_POST[ 'first_num' ];
+$second_num = $_POST[ 'second_num' ];
+$third_num  = $_POST[ 'third_num' ];
+$forth_num  = $_POST[ 'forth_num' ];
+$fifth_num  = $_POST[ 'fifth_num' ];
+$sixth_num  = $_POST[ 'sixth_num'];
+$seventh_num = $_POST['seventh_num'];
+$eigth_num = $_POST['eighth_num'];
+$operator = $_POST['operator'];
+        if (operator== "Add"){
+            $result1 =$first_num + $second_num ;
+            #echo $result;
+        }
+        else if (operator== "Sub"){
+            $result2 =$first_num + $second_num ;
+            #echo $result;
+        }
+        else if (operator== "Multi"){
+            $result3 =$first_num + $second_num ;
+            #echo $result;
+        }
+        if (operator== "Division"){
+            $result4 =$first_num + $second_num ;
+            #echo $result;
+        }
+?> 
+   <body>
+       <h2> 2*2 matrix Calculator <h2>
+           <form method = "POST">
+               <label>
+                First_number;
+               </label>
+               <input type= "number" name = "$first_num" value = "<?php echo $second_num; ?>">
+               <label>
+               Second_number; 
+               </label>
+               <input type= "number" name =  "$second_num" value = "<?php echo $second_num; ?>">
+               <label>$
+               Third_number ; 
+               </label>
+               <input type= "number" name = "$third_num" value = "<?php echo $third_num; ?>">
+               <label>
+               Forth_number ;
+               </label>
+               <input type= "number" name ="$forth_num"value = "<?php echo $forth_num; ?>">
+               <label>
+               Fifth_num;
+               </label>
+               <input type= "number" name ="$fifth_num"value = "<?php echo $fifth_num; ?>">
+               <label>
+               Sixth_number;
+               </label>
+               <input type= "number" name ="$sixth_num" value = "<?php echo $sixth_num; ?>">
+               <label>
+               Seventh_number; 
+               </label>
+               <input type= "number" name ="$seventh_num" value = "<?php echo $seventh_num; ?>">
+               <label>
+               Eighth_number;
+               </label>
+               <input type= "number" name ="$eighth_num" value = "<?php echo $eighth_num; ?>">
+               
+
+
+
+               <label>
+                 <h3>Result ="ADD";"Sub";"Multi"</h3>
+               </label>
+               <label>:
+               <P> <input type ="submit"value= "Add" name ="operator"></p>
+               <input type ="result1" value ="<?php echo $result1;?>">
+               <P> <input type ="submit"value= "Sub" name ="operator"></p>
+               <input type ="result2" value ="<?php echo $result2;?>">
+               <P> <input type ="submit"value= "Multi" name ="operator"></p>
+               <input type ="result3" value ="<?php echo $result3;?>">
+               <input type ="result 4" value ="<?php echo $result4;?>">
+
+
+
+</form>
+   </body>
+
+
+
+
+
+
